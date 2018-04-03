@@ -57,7 +57,24 @@ Review: We'll be using these three languages to build our virtual experience.
 
 ### Code-Along
 
-Go to [https://glitch.com/~aframe](https://glitch.com/~aframe)
+**Open the Example Project**
+
+1. Go to [https://glitch.com/~aframe](https://glitch.com/~aframe)
+1. Select "Remix Your Own" <br> <img alt="remix your own" src="aframe-remix.png" class="print-hide"/>
+1. Click "Show Live" to preview the project <br> <img alt="show live" src="show-live.png" class="print-hide"/>
+
+>**How to Navigate**: Use the arrow keys to move forwards-backwards and left-right. Click and drag to change the perspective.
+
+**Edit the Code**
+
+1. Go back to the project tab
+1. Open the index.html. *Anything look familiar?* <br> <img alt="see index" src="see-index.png" class="print-hide"/>
+1. Sign in to begin editing: Sign in with GitHub <br> <img alt="sign in" src="sign-in.png" class="print-hide"/>
+
+<img alt="sign in with github" src="github-signin.png" class="print-hide"/>
+
+
+
 
 ### Think, Pair, Share
 
@@ -79,7 +96,7 @@ Google Cardboard
 
 >### Take-Home Exercise
 
-
+>Any Minecraft fans? Check out: [aframe-aincraft](aframe-aincraft)
 
 
 ~ End ~
