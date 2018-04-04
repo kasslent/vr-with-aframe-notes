@@ -1,15 +1,11 @@
 ---
 layout: lessons
-module: 9
-lesson: 2
-title: VR Coffee House 2067
+module: 4
+lesson: 4
+title: Special Saturday: VR Coffee House
 description: Reimagining Long Lake 58 in 150 years
 permalink: module9-2.html
 ---
-
-## Description
-
-This workshop will introduce VR with A-frame and will possibly demonstrate the work done at TIFF by indigenous artists using VR on the same subject. (Confirmation pending)
 
 ## What is VR?
 
@@ -18,14 +14,10 @@ This workshop will introduce VR with A-frame and will possibly demonstrate the w
 **Augmented Reality** is ----
 
 
-### VR versus WebVR
+## VR Examples
 
-**WebVR** is ---
+*Link to examples here*
 
-
-### Examples of WebVR
-
-* list here with links to examples
 
 ### Why VR?
 
@@ -33,29 +25,56 @@ What's the value in creating these virtual experiences?
 
 Why virtual over real-life experiences?
 
+
+### VR versus WebVR
+
+**WebVR** is a JavaScript API that makes it possible to experience VR in our browser. We can use WebVR to develop, experience, and share VR projects.
+
+*Another example of an API (Application Programming Interface) is the <a href="https://developers.google.com/maps/">Google Maps API</a>, which allows developers to add customized maps to websites and apps.*
+
+
 ## Intro to A-Frame
 
+**A-Frame** is an open source framework for developing WebVR. A-Frame is based on HTML, using the <a-scene> element. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
+
+Just like other websites, A-Frame projects can be inspected using a built-in visual 3D inspector. We can access this by opening any A-Frame scene, then hitting `<ctrl> + <alt> + i`
 
 ### What Can We Create?
 
-Embed or link to example project.
+Go to [https://aframe.io/](https://aframe.io/) to view example projects that were built using A-Frame.
+
+>Navigate within a scene by using WASD and arrow keys. Click and drag to turn.
 
 
 ### Today's project
 
 We'll be reimagining Long Lake 58 in 150 years and building a virtual experience to share our vision with others.
 
+*Embed example here*
+
+
 ## Getting Started
 
-Review: We'll be using these three languages to build our virtual experience.
+A-Frame uses HTML elements called **primitives**. These can be customized using HTML attributes (e.g. `color="red"`).
 
-**HTML** (Hypertext Markup Language) defines the structure and content.  
-**CSS** (Cascading Style Sheet) is responsible for presentation.  
-**JavaScript** is a programming language and controls the behavior and interactions.
+<img alt="primitives" src="img/aframe-primitives.png" class="print-hide"/>
 
->Can you guess which elements in our example projects were built using each of these languages?
+* **Position** defines an object's position in 3D space (X,Y,Z)
+  * X = left-right
+  * Y = up-down
+  * Z = forward-back
+* **Rotation** defines an object's orientation in 3D space (X,Y,Z) - measured in degrees
+  * X = pitch
+  * Y = yaw
+  * Z = roll
+
+<img alt="rotation" src="img/paperplane.png" class="print-hide"/>
+
+
 
 ### Code-Along
+
+We'll be using Glitch to edit and save our A-Frame projects.
 
 **Open the Example Project**
 
@@ -77,7 +96,7 @@ Review: We'll be using these three languages to build our virtual experience.
 
 ### Think, Pair, Share
 
-Q: Fast forward 150 years! What does Long Lake 58 look like?
+Q: Fast forward 150 years! What does Long Lake 58 look like in 2067?
 
 Q: What do you wish for this community, what do you hope to see?
 
@@ -89,6 +108,10 @@ Q: What do you wish for this community, what do you hope to see?
 
 Google Cardboard
 
+
+### Next Steps
+
+**Get Inspired!** Check out <a href="https://twitter.com/aframevr">A-Frame's Twitter page</a> to see what other developers are building.
 
 
 
