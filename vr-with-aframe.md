@@ -2,9 +2,9 @@
 layout: lessons
 module: 4
 lesson: 4
-title: Special Saturday: VR Coffee House
+title: Special Saturday VR Coffee House
 description: Reimagining Long Lake 58 in 150 years
-permalink: module9-2.html
+permalink: module4-4.html
 ---
 
 ## What is VR?
