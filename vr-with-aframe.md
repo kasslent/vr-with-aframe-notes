@@ -81,7 +81,7 @@ We'll be using Glitch to edit and save our A-Frame projects.
 
 1. Go to [https://glitch.com/~aframe](https://glitch.com/~aframe)
 1. Select "Remix Your Own" <br> <img alt="remix your own" src="img/aframe-remix.png" class="print-hide"/>
-1. Click "Show Live" to preview the project <br> <img style="width:50%;" alt="show live" src="img/show-live.png" class="print-hide"/>
+1. Click "Show Live" to preview the project <br> <img alt="show live" src="img/show-live.png" class="print-hide"/>
 
 
 **Edit the Code**
@@ -106,7 +106,7 @@ We can create a background image by applying a 360 image texture to the sky prim
 *Note: We can also capture 360 images using apps like <a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en">Cardboard Camera</a>*
 
 1. Upload image to the "assets" folder <br> <img alt="add asset" src="img/add-asset.png" class="print-hide"/>
-1. Copy image URL <br> <img style="width:50%;" alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
+1. Copy image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
 1. Add a `<script>` linking to your image URL in the `<head>`
 1. ...and name the image by adding an `id`
   * Example `<script>`: <br> `<script id="rocklands" src="https://cdn.glitch.com/linktoimage"></script>`
