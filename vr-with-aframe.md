@@ -35,7 +35,7 @@ Why virtual over real-life experiences?
 
 ## Intro to A-Frame
 
-**A-Frame** is an open source framework for developing WebVR. A-Frame is based on HTML, using the <a-scene> element. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
+**A-Frame** is an open source framework for developing WebVR. A-Frame is based on HTML, using the `<a-scene>` element. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
 
 Just like other websites, A-Frame projects can be inspected using a built-in visual 3D inspector. We can access this by opening any A-Frame scene, then hitting `<ctrl> + <alt> + i`
 
