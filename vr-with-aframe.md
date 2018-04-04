@@ -68,7 +68,7 @@ A-Frame uses HTML elements called **primitives**. These can be customized using 
   * Y = yaw
   * Z = roll
 
-<img alt="rotation" src="img/paperplane.png" class="print-hide"/>
+<img alt="rotation" src="img/paper-plane.png" class="print-hide"/>
 
 
 
