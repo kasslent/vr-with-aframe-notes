@@ -55,6 +55,8 @@ We'll be reimagining Long Lake 58 in 150 years and building a virtual experience
 
 ## Getting Started
 
+### Primitives
+
 A-Frame uses HTML elements called **primitives**. These can be customized using HTML attributes (e.g. `color="red"`).
 
 <img alt="primitives" src="img/aframe-primitives.jpg" class="print-hide"/>
@@ -71,8 +73,7 @@ A-Frame uses HTML elements called **primitives**. These can be customized using 
 <img alt="rotation" src="img/paper-plane.png" class="print-hide"/>
 
 
-
-### Code-Along
+### Remixing Projects
 
 We'll be using Glitch to edit and save our A-Frame projects.
 
@@ -87,8 +88,13 @@ We'll be using Glitch to edit and save our A-Frame projects.
 **Edit the Code**
 
 1. Go back to the project tab
-1. Open the index.html. *Anything look familiar?* <br> <img alt="see index" src="img/see-index.png" class="print-hide"/>
+1. Open index.html. *Anything look familiar?* <br> <img alt="see index" src="img/see-index.png" class="print-hide"/>
 1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
+1. CHALLENGE:
+  * Change the colour of the sphere
+  * Change the position of the cylinder
+  * Change the rotation of the box
+  * Add a line of text (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
 
 
 
