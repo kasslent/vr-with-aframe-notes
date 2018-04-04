@@ -14,7 +14,7 @@ permalink: module4-4.html
 **Augmented Reality** is ----
 
 
-## VR Examples
+### VR Examples
 
 *Link to examples here*
 
@@ -46,7 +46,7 @@ Go to [https://aframe.io/](https://aframe.io/) to explore example projects.
 >Navigate within a scene by using WASD and arrow keys. Click and drag to turn.
 
 
-### Today's project
+## Today's project
 
 We'll be reimagining Long Lake 58 in 150 years and building a virtual experience to share our vision with others.
 
@@ -90,11 +90,10 @@ We'll be using Glitch to edit and save our A-Frame projects.
 1. Open index.html. *Anything look familiar?* <br> <img alt="see index" src="img/see-index.png" class="print-hide"/>
 1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
 
-> ###CHALLENGE:
-  * Change the colour of the sphere
-  * Change the position of the cylinder
-  * Change the rotation of the box
-  * Add a line of text  in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
+> ### CHALLENGE:
+>> * Change the colour of the sphere
+>> * Change the rotation of the box
+>> * Add a line of text  in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
 
 ### Uploading Assets
 
