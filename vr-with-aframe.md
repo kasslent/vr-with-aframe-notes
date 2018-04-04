@@ -91,10 +91,10 @@ We'll be using Glitch to edit and save our A-Frame projects.
 1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
 
 >## CHALLENGE:
-> Change the colour of the sphere
-> Change the rotation of the box
-> Change the position of the cylinder
-> Add a line of text in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
+> * Change the colour of the sphere
+> * Change the rotation of the box
+> * Change the position of the cylinder
+> * Add a line of text in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
 
 
 ### Uploading Assets
