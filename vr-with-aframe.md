@@ -41,7 +41,7 @@ Just like other websites, A-Frame projects can be inspected using a built-in vis
 
 ### What Can We Create?
 
-Go to [https://aframe.io/](https://aframe.io/) to view example projects that were built using A-Frame.
+Go to [https://aframe.io/](https://aframe.io/) to explore example projects.
 
 >Navigate within a scene by using WASD and arrow keys. Click and drag to turn.
 
@@ -83,19 +83,42 @@ We'll be using Glitch to edit and save our A-Frame projects.
 1. Select "Remix Your Own" <br> <img alt="remix your own" src="img/aframe-remix.png" class="print-hide"/>
 1. Click "Show Live" to preview the project <br> <img alt="show live" src="img/show-live.png" class="print-hide"/>
 
->How to Navigate: Use the arrow keys to move forwards-backwards and left-right. Click and drag to change the perspective.
 
 **Edit the Code**
 
 1. Go back to the project tab
 1. Open index.html. *Anything look familiar?* <br> <img alt="see index" src="img/see-index.png" class="print-hide"/>
 1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
-1. CHALLENGE:
+
+> ###CHALLENGE:
   * Change the colour of the sphere
   * Change the position of the cylinder
   * Change the rotation of the box
-  * Add a line of text (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
+  * Add a line of text  in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
 
+### Uploading Assets
+
+**Background Images**
+
+We can create a background image by applying a 360 image texture to the sky primitive. For more options, check out these <a href="https://www.flickr.com/groups/equirectangular/">360° images from Flickr</a>. Save an image by clicking on the image, then "Download" (bottom, right). <br> <img alt="download image" src="img/flickr-save.png" class="print-hide"/>
+
+*Note: We can also capture 360 images using apps like <a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en">Cardboard Camera</a>*
+
+1. Upload image to the "assets" folder <br> <img alt="add asset" src="img/add-asset.png" class="print-hide"/>
+1. Copy image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
+1. Add a `<script>` linking to your image URL in the `<head>`
+1. Name the image by adding an `id`
+1. Add a `src` attribute to the `<a-sky>` primitive
+
+Example `<script>`: <br> `<script id="rocklands" src="https://cdn.glitch.com/linktoimage"></script>`
+
+Updated `<a-sky>` primitive: <br>
+`<a-sky src="#rocklands"></a-sky>`
+
+<img alt="example code" src="img/add-bg-img.png" class="print-hide"/>
+
+
+**Image Textures**
 
 
 
@@ -107,7 +130,9 @@ Q: Fast forward 150 years! What does Long Lake 58 look like in 2067?
 Q: What do you wish for this community, what do you hope to see?
 
 
+### Finding Assets
 
+https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets
 
 
 ### Experience your Virtual World!
