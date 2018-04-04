@@ -2,7 +2,7 @@
 layout: lessons
 module: 9
 lesson: 2
-title: VR Coffee House
+title: VR Coffee House 2067
 description: Reimagining Long Lake 58 in 150 years
 permalink: module9-2.html
 ---
@@ -33,7 +33,7 @@ What's the value in creating these virtual experiences?
 
 Why virtual over real-life experiences?
 
-### Intro to A-Frame
+## Intro to A-Frame
 
 
 ### What Can We Create?
@@ -45,7 +45,7 @@ Embed or link to example project.
 
 We'll be reimagining Long Lake 58 in 150 years and building a virtual experience to share our vision with others.
 
-### Getting Started
+## Getting Started
 
 Review: We'll be using these three languages to build our virtual experience.
 
@@ -63,15 +63,14 @@ Review: We'll be using these three languages to build our virtual experience.
 1. Select "Remix Your Own" <br> <img alt="remix your own" src="img/aframe-remix.png" class="print-hide"/>
 1. Click "Show Live" to preview the project <br> <img alt="show live" src="img/show-live.png" class="print-hide"/>
 
->**How to Navigate**: Use the arrow keys to move forwards-backwards and left-right. Click and drag to change the perspective.
+>How to Navigate: Use the arrow keys to move forwards-backwards and left-right. Click and drag to change the perspective.
 
 **Edit the Code**
 
 1. Go back to the project tab
 1. Open the index.html. *Anything look familiar?* <br> <img alt="see index" src="img/see-index.png" class="print-hide"/>
-1. Sign in to begin editing: Sign in with GitHub <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
+1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
 
-<img alt="sign in with github" src="img/github-signin.png" class="print-hide"/>
 
 
 
@@ -91,7 +90,6 @@ Q: What do you wish for this community, what do you hope to see?
 Google Cardboard
 
 
-### Exercise
 
 
 >### Take-Home Exercise
