@@ -57,7 +57,7 @@ We'll be reimagining Long Lake 58 in 150 years and building a virtual experience
 
 A-Frame uses HTML elements called **primitives**. These can be customized using HTML attributes (e.g. `color="red"`).
 
-<img alt="primitives" src="img/aframe-primitives.png" class="print-hide"/>
+<img alt="primitives" src="img/aframe-primitives.jpg" class="print-hide"/>
 
 * **Position** defines an object's position in 3D space (X,Y,Z)
   * X = left-right
