@@ -160,14 +160,12 @@ This system helps your browser cache the images, to help the scene load more qui
 1. Name the image by adding an `id`  
 
 ``html
-    <a-scene>
-      <a-assets>
-        <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
-      </a-assets>
-
-      <!--other primitives go here-->
-
-    </a-scene>
+  <a-scene>
+    <a-assets>
+      <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
+    </a-assets>
+    <!--other primitives go here-->
+  </a-scene>
 ``
 
 
