@@ -159,6 +159,7 @@ This system helps your browser cache the images, to help the scene load more qui
 1. Create an `<img>` tag that links to this url
 1. Name the image by adding an `id`  
 
+`html
     <a-scene>
       <a-assets>
         <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
@@ -167,12 +168,13 @@ This system helps your browser cache the images, to help the scene load more qui
       <!--other primitives go here-->
 
     </a-scene>
+`
 
 ### Adding a Background Image
 
 1. Reference the asset by adding a `src` attribute to the `<a-sky>` primitive
 
-    <a-sky src="#rocklands"></a-sky>
+    `<a-sky src="#rocklands"></a-sky>`
 
 
 ### Adding Textures to Objects
@@ -182,6 +184,7 @@ This system helps your browser cache the images, to help the scene load more qui
 1. Name the image by adding an `id`  
 1. Reference the asset by adding a `src` attribute to the object primitive
 
+`html
     <a-scene>
       <a-assets>
         <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
@@ -193,7 +196,7 @@ This system helps your browser cache the images, to help the scene load more qui
       <!--other primitives go here-->
 
     </a-scene>
-
+`
 
 
 ## Adding Movement
