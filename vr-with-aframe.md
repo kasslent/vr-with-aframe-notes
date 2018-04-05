@@ -32,7 +32,7 @@ Examples:
 
 *What's the value of using virtual experiences over real-life experiences?*
 
-Besides providing immersive storytelling and gaming experiences, VR is also being used to positively impact society! Here are a few examples:
+Besides providing immersive storytelling and gaming opportunities, VR is also being used to positively impact society! Here are a few examples:
 
 **VR Therapy**: Using VR to face fears like <a href="https://newatlas.com/fearless-spider-fear-oculus-rift-vr/45146/">arachnophobia</a> or <a href="https://newatlas.com/public-speaking-simulation-gear-vr/44871/">public speaking</a>.
 
@@ -130,39 +130,32 @@ We'll be using Glitch to edit and save our A-Frame projects.
 
 ## Using Assets
 
-### Uploading Images
+### Uploading Assets
 
 1. Upload images to the "assets" folder
 <br><img alt="add asset" src="img/add-asset.png" class="print-hide"/>
 
 **Background Images**
 
-We can add a background image by applying a 360 image texture to the sky primitive.
-
-For more image options, check out these <a href="https://www.flickr.com/groups/equirectangular/">360° images from Flickr</a>. Save an image by clicking on the image, then the Download icon (bottom, right). <br> <img alt="download image" src="img/flickr-save.png" class="print-hide"/>
+When uploading background images, make sure that they have a 2:1 aspect ratio. Search for '360 images' or see this <a href="https://www.flickr.com/groups/equirectangular/">360° image library on Flickr</a>. Save an image by clicking on the image, then the Download icon (bottom, right). <br> <img alt="download image" src="img/flickr-save.png" class="print-hide"/>
 
 *Note: We can also capture 360 images using apps like <a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en">Cardboard Camera</a>*
 
 **Textures**
 
-We can add textures to objects, too!
-
-For more image options, check out these <a href="https://www.flickr.com/groups/freetextures/">free textures from Flickr</a>. Save an image using the same steps as above.
+We can add textures to objects, too! Check out this <a href="https://www.flickr.com/groups/freetextures/">free texture library on Flickr</a> for more options. Save an image using the same steps as above.
 
 
-### Using the Asset Management System
+### Asset Management System
 
-This system helps your browser cache the images, to help the scene load more quickly. We can use the asset management system by adding a new primitive called `<a-assets>`.
+This system helps your browser cache images, in order to help the scene load more quickly. We can use the asset management system by adding a new primitive called `<a-assets>`.
 
 1. Add an `<a-assets>` opening and closing tag just inside of your `<a-frame>`
-1. Copy the image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
-1. Create an `<img>` tag that links to this url
-1. Name the image by adding an `id`  
 
 ```
 <a-scene>
   <a-assets>
-    <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
+
   </a-assets>
   <!--other primitives go here-->
 </a-scene>
@@ -172,9 +165,20 @@ This system helps your browser cache the images, to help the scene load more qui
 
 ### Adding a Background Image
 
+1. Locate your image in the assets folder and copy the image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
+1. Create an `<img>` tag that links to this url
+1. Name the image by adding an `id`
 1. Reference the asset by adding a `src` attribute to the `<a-sky>` primitive
 
-    `<a-sky src="#rocklands"></a-sky>`
+```
+<a-scene>
+  <a-assets>
+    <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
+  </a-assets>
+  <a-sky src="#rocklands"></a-sky>
+  <!--other primitives go here-->
+</a-scene>
+```
 
 
 ### Adding Textures to Objects
