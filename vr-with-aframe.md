@@ -159,14 +159,16 @@ This system helps your browser cache the images, to help the scene load more qui
 1. Create an `<img>` tag that links to this url
 1. Name the image by adding an `id`  
 
-`    <a-scene>
+``html
+    <a-scene>
       <a-assets>
         <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
       </a-assets>
 
       <!--other primitives go here-->
 
-    </a-scene>`
+    </a-scene>
+``
 
 
 ### Adding a Background Image
@@ -183,15 +185,16 @@ This system helps your browser cache the images, to help the scene load more qui
 1. Name the image by adding an `id`  
 1. Reference the asset by adding a `src` attribute to the object primitive
 
-` <a-scene>
+``html
+  <a-scene>
     <a-assets>
       <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
       <img id="ice" src="https://cdn.glitch.com/linktoimage2">
     </a-assets>
     <a-plane src="#ice" position="0 0 -4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
     <!--other primitives go here-->
-  </a-scene>`
-
+  </a-scene>
+``
 
 ## Adding Movement
 
