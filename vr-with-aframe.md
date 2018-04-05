@@ -210,18 +210,19 @@ This system helps your browser cache images, in order to help the scene load mor
 
 We can use the `<a-animation>` primitive to animate entities within our scene. Nest it within of the entity you want to animate (e.g. between the `<a-box>` opening and `</a-box>` closing tag)
 
-* **Attribute** specifies which part we are animating (the position)
-* **To** is where/how it is animated (e.g. 1 meter higher than the original position)
-* **Direction** is being alternated each time the cycle repeats
-* **Dur** is how long it takes (2000 milliseconds)
-* **Repeat** is how many times (indefinitely!)
-
 ```html
 <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow>
   <a-animation attribute="position" to="-1 1.5 -3" direction="alternate" dur="2000"
       repeat="indefinite"></a-animation>
 </a-box>
 ```
+
+* **Attribute** specifies which part we are animating (the position)
+* **To** is where/how it is animated (e.g. 1 meter higher than the original position)
+* **Direction** is being alternated each time the cycle repeats
+* **Dur** is how long it takes (2000 milliseconds)
+* **Repeat** is how many times (indefinitely!)
+
 
 
 ## Adding Interactivity
