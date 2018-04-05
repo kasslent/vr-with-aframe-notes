@@ -152,7 +152,7 @@ This system helps your browser cache images, in order to help the scene load mor
 
 1. Add an `<a-assets>` opening and closing tag just inside of your `<a-frame>`
 
-```
+```html 
 <a-scene>
   <a-assets>
 
@@ -170,7 +170,7 @@ This system helps your browser cache images, in order to help the scene load mor
 1. Name the image by adding an `id`
 1. Reference the asset by adding a `src` attribute to the `<a-sky>` primitive
 
-```
+```html
 <a-scene>
   <a-assets>
     <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
