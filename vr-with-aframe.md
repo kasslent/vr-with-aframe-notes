@@ -89,11 +89,11 @@ A-Frame uses HTML elements called **primitives**. These can be customized using 
 
 <img alt="primitives" src="img/aframe-primitives.jpg" class="print-hide"/>
 
-* **Position** defines an object's position in 3D space (X,Y,Z)
+* **Position** defines the position in 3D space (X,Y,Z) - measured in meters
   * X = left-right
   * Y = up-down
   * Z = forward-back
-* **Rotation** defines an object's orientation in 3D space (X,Y,Z) - measured in degrees
+* **Rotation** defines the orientation in 3D space (X,Y,Z) - measured in degrees
   * X = pitch
   * Y = yaw
   * Z = roll
@@ -124,6 +124,7 @@ We'll be using Glitch to edit and save our A-Frame projects.
 > * Change the colour of the sphere
 > * Change the rotation of the box
 > * Change the position of the cylinder
+> * Increase the size of the plane (hint: use width + height attributes)
 > * Add a line of text in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
 
 
@@ -150,9 +151,9 @@ We can add textures to objects, too! Check out this <a href="https://www.flickr.
 
 This system helps your browser cache images, in order to help the scene load more quickly. We can use the asset management system by adding a new primitive called `<a-assets>`.
 
-1. Add an `<a-assets>` opening and closing tag just inside of your `<a-frame>`
+1. Add an `<a-assets>` opening and closing tag just inside of your `<a-scene>`
 
-```html 
+```html
 <a-scene>
   <a-assets>
 
@@ -183,12 +184,13 @@ This system helps your browser cache images, in order to help the scene load mor
 ```
 
 
-### Adding Textures to Objects
 
-1. Copy the image URL (same as above) <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
+### Adding Textures
+
+1. Copy the image URL (same as above)
 1. Create an `<img>` tag that links to this url
 1. Name the image by adding an `id`  
-1. Reference the asset by adding a `src` attribute to the object primitive
+1. Reference the asset by adding a `src` attribute to the primitive
 
 ```html
 <a-scene>
@@ -204,8 +206,22 @@ This system helps your browser cache images, in order to help the scene load mor
 ```
 
 
-## Adding Movement
+## Adding Animation
 
+We can use the `<a-animation>` primitive to animate entities within our scene. Nest it within of the entity you want to animate (e.g. between the `<a-box>` opening and `</a-box>` closing tag)
+
+* **Attribute** specifies which part we are animating (the position)
+* **To** is where/how it is animated (e.g. 1 meter higher than the original position)
+* **Direction** is being alternated each time the cycle repeats
+* **Dur** is how long it takes (2000 milliseconds)
+* **Repeat** is how many times (indefinitely!)
+
+```html
+<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow>
+  <a-animation attribute="position" to="-1 1.5 -3" direction="alternate" dur="2000"
+      repeat="indefinite"></a-animation>
+</a-box>
+```
 
 
 ## Adding Interactivity
