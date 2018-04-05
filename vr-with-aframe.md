@@ -25,21 +25,32 @@ Examples:
 
 
 
-### VR Examples
 
-*Link to examples here*
+## Why VR?
+
+*Why create virtual experiences?*
+
+*What's the value of using virtual experiences over real-life experiences?*
+
+Besides providing immersive storytelling and gaming experiences, VR is also being used to positively impact society! Here are a few examples:
+
+**VR Therapy**: Using VR to face fears like <a href="https://newatlas.com/fearless-spider-fear-oculus-rift-vr/45146/">arachnophobia</a> or <a href="https://newatlas.com/public-speaking-simulation-gear-vr/44871/">public speaking</a>.
+
+**VR + Healthcare**: As a tool for surgical training, or to help patients <a href="https://med.stanford.edu/news/all-news/2017/09/virtual-reality-alleviates-pain-anxiety-for-pediatric-patients.html">manage pain</a>.
+
+**VR + Education**: Providing students access to new places and experiences via <a href="https://edu.google.com/expeditions/#about">Google Expeditions</a>
 
 
 
-### Why VR?
+### Some Considerations
 
-What's the value in creating these virtual experiences?
+* Motion sickness
+* Unstability or 'newness'
+* Accessibility and cost
 
-Why virtual over real-life experiences?
 
 
-
-### VR versus WebVR
+## VR versus WebVR
 
 **WebVR** is a JavaScript API that makes it possible to experience VR in our browser. We can use WebVR to develop, experience, and share VR projects.
 
@@ -72,7 +83,7 @@ We'll be reimagining Long Lake 58 in 150 years and building a virtual experience
 
 ## Getting Started
 
-### Primitives
+## Primitives
 
 A-Frame uses HTML elements called **primitives**. These can be customized using HTML attributes (e.g. `color="red"`).
 
@@ -91,18 +102,18 @@ A-Frame uses HTML elements called **primitives**. These can be customized using 
 
 
 
-### Remixing Projects
+## Remixing Projects
 
 We'll be using Glitch to edit and save our A-Frame projects.
 
-**Open the Example Project**
+### Open the Example Project
 
 1. Go to [https://glitch.com/~aframe](https://glitch.com/~aframe)
 1. Select "Remix Your Own" <br> <img alt="remix your own" src="img/aframe-remix.png" class="print-hide"/>
 1. Click "Show Live" to preview the project <br> <img alt="show live" src="img/show-live.png" class="print-hide"/>
 
 
-**Edit the Code**
+### Edit the Code
 
 1. Go back to the project tab
 1. Open index.html. *Anything look familiar?* <br> <img alt="see index" src="img/see-index.png" class="print-hide"/>
@@ -117,7 +128,14 @@ We'll be using Glitch to edit and save our A-Frame projects.
 
 
 
-### Adding Background Images
+## Using Assets
+
+### Uploading Images
+
+1. Upload images to the "assets" folder
+<br><img alt="add asset" src="img/add-asset.png" class="print-hide"/>
+
+**Background Images**
 
 We can add a background image by applying a 360 image texture to the sky primitive.
 
@@ -125,50 +143,78 @@ For more image options, check out these <a href="https://www.flickr.com/groups/e
 
 *Note: We can also capture 360 images using apps like <a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en">Cardboard Camera</a>*
 
-1. Upload image to the "assets" folder <br> <img alt="add asset" src="img/add-asset.png" class="print-hide"/>
-1. Copy image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
-1. Add a `<script>` linking to your image URL in the `<head>`
-1. ...and name the image by adding an `id`
-  * Example `<script>`: <br> `<script id="rocklands" src="https://cdn.glitch.com/linktoimage"></script>`
-1. Add a `src` attribute to the `<a-sky>` primitive
-  * Updated `<a-sky>` primitive: <br>
-`<a-sky src="#rocklands"></a-sky>`
-
-<img alt="example code" src="img/add-bg-img.png" class="print-hide"/>
-
-
-
-### Adding Textures
+**Textures**
 
 We can add textures to objects, too!
 
 For more image options, check out these <a href="https://www.flickr.com/groups/freetextures/">free textures from Flickr</a>. Save an image using the same steps as above.
 
-1. Upload image to the "assets" folder (same as above)
-1. Copy image URL (same as above)
-1. Add a `<script>` linking to your image URL in the `<head>`
-1. ...and name the image by adding an `id`
-  * Example `<script>`: <br> `<script id="ice" src="https://cdn.glitch.com/linktoimage"></script>`
-1. Add a `src` attribute to the object primitive
-  * Updated object primitive - *Replaced `color` with `src`*: <br>
-`<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="#ice" shadow></a-plane>`
 
-<img alt="example code" src="img/add-bg-img.png" class="print-hide"/>
+### Using the Asset Management System
+
+This system helps your browser cache the images, to help the scene load more quickly. We can use the asset management system by adding a new primitive called `<a-assets>`.
+
+1. Add an `<a-assets>` opening and closing tag just inside of your `<a-frame>`
+1. Copy the image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
+1. Create an `<img>` tag that links to this url
+1. Name the image by adding an `id`  
+
+    <a-scene>
+      <a-assets>
+        <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
+      </a-assets>
+
+      <!--other primitives go here-->
+
+    </a-scene>
+
+### Adding a Background Image
+
+1. Reference the asset by adding a `src` attribute to the `<a-sky>` primitive
+
+    <a-sky src="#rocklands"></a-sky>
+
+
+### Adding Textures to Objects
+
+1. Copy the image URL (same as above) <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
+1. Create an `<img>` tag that links to this url
+1. Name the image by adding an `id`  
+1. Reference the asset by adding a `src` attribute to the object primitive
+
+    <a-scene>
+      <a-assets>
+        <img id="rocklands" src="https://cdn.glitch.com/linktoimage1">
+        <img id="ice" src="https://cdn.glitch.com/linktoimage2">
+      </a-assets>
+
+      <a-plane src="#ice" position="0 0 -4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
+
+      <!--other primitives go here-->
+
+    </a-scene>
 
 
 
+## Adding Movement
+
+
+
+## Adding Interactivity
+
+
+
+## Main Project
 
 >## Think, Pair, Share
 > Q: Fast forward 150 years! What does Long Lake 58 look like in 2067? <br>
 > Q: What do you wish for this community, what do you hope to see?
 
 
-### Finding Assets
-
-https://aframe.io/docs/0.5.0/introduction/faq.html#where-can-i-find-assets
 
 
-### Experience your Virtual World!
+
+## Experience your Virtual World!
 
 Google Cardboard
 
@@ -180,8 +226,9 @@ Google Cardboard
 
 
 >### Take-Home Exercise
+> Any Minecraft fans? Check out: [aframe-aincraft](aframe-aincraft) <br>
+> You can recreate this project by following <a href="https://aframe.io/docs/0.5.0/guides/building-a-minecraft-demo.html">this tutorial</a>.
 
->Any Minecraft fans? Check out: [aframe-aincraft](aframe-aincraft)
 
 
 ~ End ~
