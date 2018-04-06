@@ -318,7 +318,8 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 >## Think, Pair, Share
 > Fast forward 150 years! What does Long Lake 58 look like? <br>
 > What do you wish for this community, what do you hope to see?
-> <br><br>
+
+
 >## Exercise:
 > Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
@@ -329,7 +330,7 @@ Follow these steps to view your A-Frame scene using <a href="https://vr.google.c
 
 1. Rename your project <br> <img alt="rename project top left" src="img/rename-project.png" class="print-hide"/>
 1. On a mobile phone, open Google Chrome *(You may need to install the app first)*
-1. Go to your project's URL (same as 'live preview') <br> <img alt="project url" src="img/finished-project.png" class="print-hide"/>
+1. Go to your project's URL (same as 'live preview') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
 1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
 1. Place your mobile device in the viewer and enjoy!
 
