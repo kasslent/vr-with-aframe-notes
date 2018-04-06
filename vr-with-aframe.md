@@ -310,6 +310,7 @@ We can either add `autoplay` to play the audio automatically **OR** name the aud
 For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/components/sound.html">Sound documentation</a>.
 
 
+
 ## Main Project
 
 >## Think, Pair, Share
@@ -321,6 +322,32 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 > Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
 
+
+### Optional: A-Frame Registry
+
+### Need an Extra Challenge?
+
+We can add additional animations and special effects via the <a href="https://aframe.io/aframe-registry/">A-Frame Registry</a>. This is a library of ready-to-use components created by other developers in the A-Frame community.
+
+You can use any of these, but we'll use the Physics System for this example.
+
+1. Go to the <a href="https://aframe.io/aframe-registry/">registry</a> and search for the **Physics System** component (click on the component name) <br> <img alt="registry" src="img/search-registry.png" class="print-hide"/>
+1. On the component page, scroll down to find the installation script - copy this <br> <img alt="copy script" src="img/install-physics.png" class="print-hide"/>
+1. Go back into your project, and past the script in the `<head>`
+1. 'Live preview' and inspect your scene (`<ctrl> + <alt> + i`) - zoom by scrolling with your mouse/trackpad
+1. Let's apply a gravity effect. Click on an entity (e.g. sphere), then **add component: dynamic-body** <br> <img alt="dynamic body" src="img/add-dynamic-body.png" class="print-hide"/>
+1. We also need to prevent this entity from falling out of our scene. Click on the plane, then **add component: static-body** <br> <img alt="static body" src="img/add-static-body.png" class="print-hide"/>
+1. Preview changes by selecting **Back to Scene** <br> <img alt="back to scene top left" src="img/back-to-scene.png" class="print-hide"/>
+1. If you're happy with how it looks, copy the code that you added: find the new component then select **Copy Attributes** <br> <img alt="copy attributes button" src="img/copy-attributes.png" class="print-hide"/>
+1. Go back into your code, and paste this inside of the entity <br> (e.g. `<a-sphere dynamic-body="sphereRadius: NaN" ...>`)
+
+*When adding additional components, read the instructions to have a better understanding of how it works. Visit <a href="https://www.npmjs.com/package/aframe-physics-system">this page</a> for more info on how the Physics System component works.*
+
+>## TIP:
+> When inspecting our scene, it can be difficult to tell similar entities apart. Name entities using `id` to keep your code organized. (e.g. `<a-sphere id="scoop1">`)
+
+
+
 <img alt="Google Cardboard gif" width="70%" src="img/cardboard.gif" class="print-hide"/>
 <!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
 
@@ -330,11 +357,11 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 Follow these steps to view your A-Frame scene using <a href="https://vr.google.com/cardboard/">Google Cardboard</a>:
 
 1. Rename your project <br> <img alt="rename project top left" src="img/rename-project.png" class="print-hide"/>
-1. On a mobile phone, open Google Chrome *(You may need to install the app first)*
-1. Go to your project's URL (same as 'live preview') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
+1. Open up a browser and go to your project's URL (same as 'live preview') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
 1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
 1. Place your mobile device in the viewer and enjoy!
 
+**NOTE: Audio will not play on mobile phones running iOS. Use Androids with Google Cardboard if you'd like to experience sound.**
 
 
 ## Next Steps
