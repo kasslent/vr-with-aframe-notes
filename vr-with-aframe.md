@@ -325,6 +325,22 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 
 
 
+<img alt="Google Cardboard gif" width="70%" src="img/cardboard.gif" class="print-hide"/>
+<!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
+
+
+### Finished? Experience your Virtual World!
+
+Follow these steps to view your A-Frame scene using <a href="https://vr.google.com/cardboard/">Google Cardboard</a>:
+
+1. Rename your project <br> <img alt="rename project top left" src="img/rename-project.png" class="print-hide"/>
+1. Open up a browser and go to your project's URL (same as 'Show Live') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
+1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
+1. Place your mobile device in the viewer and enjoy!
+
+**NOTE: Audio will not play on mobile phones running iOS. Use Androids with Google Cardboard if you'd like to experience sound.**
+
+
 ## Bonus: A-Frame Registry
 
 ### Need an Extra Challenge?
@@ -348,23 +364,6 @@ In this example, we will add a gravity effect using the Physics System.
 
 >## TIP:
 > When inspecting our scene, it can be difficult to tell similar entities apart. Name entities using `id` to keep your code organized. (e.g. `<a-sphere id="scoop1">`)
-
-
-
-<img alt="Google Cardboard gif" width="70%" src="img/cardboard.gif" class="print-hide"/>
-<!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
-
-
-### Finished? Experience your Virtual World!
-
-Follow these steps to view your A-Frame scene using <a href="https://vr.google.com/cardboard/">Google Cardboard</a>:
-
-1. Rename your project <br> <img alt="rename project top left" src="img/rename-project.png" class="print-hide"/>
-1. Open up a browser and go to your project's URL (same as 'Show Live') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
-1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
-1. Place your mobile device in the viewer and enjoy!
-
-**NOTE: Audio will not play on mobile phones running iOS. Use Androids with Google Cardboard if you'd like to experience sound.**
 
 
 ## Next Steps
