@@ -75,9 +75,6 @@ Go to [https://aframe.io/](https://aframe.io/) to explore example projects.
 
 We'll be reimagining Long Lake 58 in 150 years and building a virtual experience to share our vision with others.
 
-*Embed example here*
-
-
 
 ## Getting Started
 
