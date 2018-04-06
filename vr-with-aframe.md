@@ -324,7 +324,7 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 > Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
 
-<img alt="Google Cardboard gif" src="img/cardboard.gif" class="print-hide"/>
+<img alt="Google Cardboard gif" width="70%" src="img/cardboard.gif" class="print-hide"/>
 <!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
 
 
