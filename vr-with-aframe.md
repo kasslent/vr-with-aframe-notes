@@ -295,18 +295,19 @@ Audio can enhance our scene by creating a more immersive experience for the user
 1. Copy the audio URL <br> <img alt="copy audio url" src="img/copy-audio-url.png" class="print-hide"/>
 1. Add an audio element inside of the `<a-assets>` primitive, linking to the audio URL
 1. Add a `preload` attribute to your audio file
-
-We can either add `autoplay` to play the audio automatically **OR** name the audio file using an `id` and add it later on.
+1. Name the audio file using an `id`
+1. Add a `sound` attribute to an entity that specifies which sound and when to play
 
 ```html
 <a-scene>
   <a-assets>
     <!-- ... -->
-    <audio src="https://cdn.glitch.com/linktoaudio1" autoplay preload></audio>
+    <audio id="bgmusic" src="https://cdn.glitch.com/linktoaudio1" preload></audio>
     <audio id="pop" src="https://cdn.glitch.com/linktoaudio2" preload></audio>
   </a-assets>
 
   <!-- ... -->
+  <a-sphere sound="src: #bgmusic; on: click;" position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow>
   <a-cylinder sound="src: #pop; on: click;" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
 
 <a-scene>
