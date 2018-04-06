@@ -76,9 +76,8 @@ Go to [https://aframe.io/](https://aframe.io/) to explore example projects (left
 We'll be reimagining Long Lake 58 in 150 years and building a virtual experience to share our vision with others.
 
 
->## Think, Pair, Share
-> Fast forward 150 years! What does Long Lake 58 look like? <br>
-> What do you wish for this community, what do you hope to see?
+>## Fast forward 150 years! What does Long Lake 58 look like?
+>## What do you wish for this community, what do you hope to see?
 
 
 
