@@ -118,7 +118,7 @@ We'll be using Glitch to edit and save our A-Frame projects.
 1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
 
 
->## Try 1-2 of these Challenges:
+>## Challenge:
 > * Change the colour of the sphere
 > * Change the rotation of the box
 > * Change the position of the cylinder
@@ -285,7 +285,7 @@ For more event options, check out this <a href="https://aframe.io/docs/0.8.0/com
 
 ## Adding Audio
 
-Audio can help enhance our VR scene and create an even more immersive experience for the user. To find audio that is safe for reuse, try [https://freesound.org/](https://freesound.org/) or [https://www.jamendo.com/start](https://www.jamendo.com/start). *Bonus! Upload your own audio created using <a href="https://www.soundtrap.com">Soundtrap</a>!*
+Audio can help enhance our VR scene by creating an even more immersive experience for the user. To find audio that is safe for reuse, try [https://freesound.org/](https://freesound.org/) or [https://www.jamendo.com/start](https://www.jamendo.com/start). *Bonus! Upload your own audio created in <a href="https://www.soundtrap.com">Soundtrap</a>!*
 
 1. Upload your chosen audio file into the assets folder
 1. Copy the audio URL <br> <img alt="copy audio url" src="img/copy-audio-url.png" class="print-hide"/>
@@ -308,23 +308,34 @@ We can either add `autoplay` to play the audio automatically **OR** name the aud
 <a-scene>
 ```
 
-*You'll notice that the `sound` attribute's properties (e.g. `on`) and values (e.g. `click`) look similar to CSS!*
+*Does the format of the `sound` attribute look familiar? The properties (e.g. `on`) and values (e.g. `click`) are formatted like CSS!*
+
+For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/components/sound.html">Sound documentation</a>.
 
 
 ## Main Project
 
 >## Think, Pair, Share
-> Q: Fast forward 150 years! What does Long Lake 58 look like in 2067? <br>
-> Q: What do you wish for this community, what do you hope to see?
+> Fast forward 150 years! What does Long Lake 58 look like? <br>
+> What do you wish for this community, what do you hope to see?
+> <br><br>
+>## Exercise:
+> Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
 
+### Finished? Experience your Virtual World!
 
+Follow these steps to view your A-Frame scene using <a href="https://vr.google.com/cardboard/">Google Cardboard</a>:
 
+1. Rename your project <br> <img alt="rename project top left" src="img/rename-project.png" class="print-hide"/>
+1. On a mobile phone, open Google Chrome *(You may need to install the app first)*
+1. Go to your project's URL (same as 'live preview') <br> <img alt="project url" src="img/finished-project.png" class="print-hide"/>
+1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
+1. Place your mobile device in the viewer and enjoy!
 
-## Experience your Virtual World!
+<img alt="Google Cardboard gif" src="img/cardboard.gif" class="print-hide"/>
 
-Google Cardboard
-
+<!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
 
 ### Next Steps
 
