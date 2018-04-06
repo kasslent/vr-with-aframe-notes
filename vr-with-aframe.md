@@ -324,6 +324,10 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 > Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
 
+<img alt="Google Cardboard gif" src="img/cardboard.gif" class="print-hide"/>
+<!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
+
+
 ### Finished? Experience your Virtual World!
 
 Follow these steps to view your A-Frame scene using <a href="https://vr.google.com/cardboard/">Google Cardboard</a>:
@@ -334,38 +338,17 @@ Follow these steps to view your A-Frame scene using <a href="https://vr.google.c
 1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
 1. Place your mobile device in the viewer and enjoy!
 
-<img alt="Google Cardboard gif" src="img/cardboard.gif" class="print-hide"/>
 
-<!-- Cardboard gif from https://dribbble.com/shots/4153349-Cardboard -->
 
-### Next Steps
+## Next Steps
 
 **Get Inspired!** Check out <a href="https://twitter.com/aframevr">A-Frame's Twitter page</a> to see what other developers are building.
 
 
-
->### Take-Home Exercise
+>## Take-Home Exercise
 > Any Minecraft fans? Check out: [aframe-aincraft](aframe-aincraft) <br>
 > You can recreate this project by following <a href="https://aframe.io/docs/0.5.0/guides/building-a-minecraft-demo.html">this tutorial</a>.
 
 
 
 ~ End ~
-
-
-### Heading
-
->Pink box
-
-**bold**
-
-*Italics*
-
-Code:
-    <tag>Content that shows on page.</tag>
-      |                               |
-      |--opening tag                  |--closing tag
-
-or `code`
-
-[image](http://html5doctor.com/lets-talk-about-semantics/)
