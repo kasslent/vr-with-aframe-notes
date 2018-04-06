@@ -131,13 +131,13 @@ We'll be using Glitch to edit and save our A-Frame projects.
 1. Upload images to the "assets" folder
 <br><img alt="add asset" src="img/add-asset.png" class="print-hide"/>
 
-**Background Images**
+**Finding Background Images**
 
 When uploading background images, make sure that they have a 2:1 aspect ratio. Search for '360 images' or see this <a href="https://www.flickr.com/groups/equirectangular/">360° image library on Flickr</a>. Save an image by clicking on the image, then the Download icon (bottom, right). <br> <img alt="download image" src="img/flickr-save.png" class="print-hide"/>
 
 *Note: We can also capture 360 images using apps like <a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en">Cardboard Camera</a>*
 
-**Textures**
+**Finding Textures**
 
 We can add textures to objects, too! Check out this <a href="https://www.flickr.com/groups/freetextures/">free texture library on Flickr</a> for more options. Save an image using the same steps as above.
 
@@ -153,7 +153,7 @@ This system helps your browser cache images, in order to help the scene load mor
   <a-assets>
 
   </a-assets>
-  <!--other primitives go here-->
+  <!-- ... -->
 </a-scene>
 ```
 
@@ -174,7 +174,7 @@ This system helps your browser cache images, in order to help the scene load mor
 
   <a-sky src="#rocklands"></a-sky>
 
-  <!--other primitives go here-->
+  <!-- ... -->
 </a-scene>
 ```
 
@@ -196,7 +196,7 @@ This system helps your browser cache images, in order to help the scene load mor
 
   <a-plane src="#ice" position="0 0 -4" rotation="-90 0 0" width="4" height="4" shadow></a-plane>
 
-  <!--other primitives go here-->
+  <!-- ... -->
 </a-scene>
 ```
 
