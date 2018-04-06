@@ -322,7 +322,7 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 ## Main Project
 
 >## Exercise:
-> Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
+> Create a virtual representation of your vision of Long Lake 58 in 150 years. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
 
 
