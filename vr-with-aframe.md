@@ -9,7 +9,7 @@ permalink: module4-4.html
 
 ## What is VR?
 
-**Virtual Reality** is a computer-generated 3D environment that simulates a real experience. Level of interactivity can vary from passively observing to device-assisted interactions.
+**Virtual Reality** is a computer-generated 3D environment that simulates a real experience. The level of interactivity can vary from passively observing to device-assisted interactions.
 
 Examples:
 * <a href="https://www.youtube.com/watch?v=hEK-J3ZgCZA">Tilt Brush</a>
@@ -120,11 +120,11 @@ We'll be using Glitch to edit and save our A-Frame projects.
 1. Sign in with GitHub to begin editing. <br> <img alt="sign in" src="img/sign-in.png" class="print-hide"/>
 
 
->## CHALLENGE:
+>## Try 1-2 of these Challenges:
 > * Change the colour of the sphere
 > * Change the rotation of the box
 > * Change the position of the cylinder
-> * Increase the size of the plane (hint: use width + height attributes)
+> * Increase the size of the plane (hint: which html attributes affect size?)
 > * Add a line of text in the center of your scene (see <a href="https://aframe.io/docs/0.8.0/primitives/a-text.html"> A-Frame primitives</a>)
 
 
@@ -164,7 +164,7 @@ This system helps your browser cache images, in order to help the scene load mor
 
 
 
-### Adding a Background Image
+## Adding a Background Image
 
 1. Locate your image in the assets folder and copy the image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
 1. Create an `<img>` tag that links to this url
@@ -185,7 +185,7 @@ This system helps your browser cache images, in order to help the scene load mor
 
 
 
-### Adding Textures
+## Adding Textures
 
 1. Copy the image URL (same as above)
 1. Create an `<img>` tag that links to this url
@@ -217,16 +217,75 @@ We can use the `<a-animation>` primitive to animate entities within our scene. N
 </a-box>
 ```
 
-* **Attribute** specifies which part we are animating (the position)
-* **To** is where/how it is animated (e.g. 1 meter higher than the original position)
-* **Direction** is being alternated each time the cycle repeats
-* **Dur** is how long it takes (2000 milliseconds)
-* **Repeat** is how many times (indefinitely!)
+* **Attribute** specifies which part we are animating (e.g. position, rotation, scale.. even material.color!)
+* **To** is the value we are animating it to (e.g. 1 meter higher than the original position)
+* **Direction** is the direction of the animation (between `from` and `to`)
+* **Dur** is how long it takes (in milliseconds)
+* **Repeat** is the amount of times this happens
+
+See the <a href="https://aframe.io/docs/0.8.0/core/animations.html">Animations documentation</a> for more options!
 
 
 
 ## Adding Interactivity
 
+Most users don't have access to VR equipment and will view our projects directly in their browser. We'll be experiencing our final projects using Google Cardboard. That being said, we'll want to consider this when programming interactions into our scenes. **Cursor components** are accessible for both of these viewing options, so any events involving gazing or clicking should work.
+
+A-Frame automatically sets up a default camera in our scene. We can't currently see our mouse cursor, so we need to add an `<a-cursor>` primitive inside of `<a-camera>`.
+
+```html
+<a-scene>
+  <!-- ... -->
+
+  <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+</a-scene>
+```
+
+*If your `<a-plane>` disappears, try giving it a position attribute*
+
+### Animating on Events
+
+We can use events to trigger animations using the <a href="https://aframe.io/docs/0.8.0/core/animations.html#begin"> `begin` attribute</a>.
+
+For example, when the user clicks on the box, it begins moving:
+
+```html
+<a-scene>
+  <!-- ... -->
+
+  <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow>
+    <a-animation begin="click" attribute="position" to="-1 1.5 -3" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+  </a-box>
+
+  <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+</a-scene>
+```
+
+Or, when the user looks at the sphere it changes colours, then changes back when they look away:
+
+```html
+<a-scene>
+  <!-- ... -->
+
+  <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow>
+    <a-animation begin="mouseenter" attribute="material.color" from="#EF2D5E" to="red" dur="3000"></a-animation>
+    <a-animation begin="mouseleave" attribute="material.color" from="red" to="#EF2D5E" dur="3000"></a-animation>
+  </a-sphere>
+
+  <a-camera>
+    <a-cursor></a-cursor>
+  </a-camera>
+</a-scene>
+```
+
+For more event options, check out this <a href="https://aframe.io/docs/0.8.0/components/cursor.html#events">Cursor documentation</a>.
+
+
+## Adding Audio
 
 
 ## Main Project
