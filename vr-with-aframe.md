@@ -32,7 +32,7 @@ Examples:
 
 *What's the value of using virtual experiences over real-life experiences?*
 
-Besides providing immersive storytelling and gaming opportunities, and a new medium for creativity and self-expression, VR is also being used to positively impact society! Here are a few examples:
+VR provides immersive storytelling and gaming opportunities, and is a new medium for creativity and self-expression. VR is also being used to positively impact society! Here are a few examples:
 
 * **VR Therapy**: Using VR to face fears like <a href="https://newatlas.com/fearless-spider-fear-oculus-rift-vr/45146/">arachnophobia</a> or <a href="https://newatlas.com/public-speaking-simulation-gear-vr/44871/">public speaking</a>.
 * **VR + Healthcare**: As a tool for surgical training, or to help patients <a href="https://med.stanford.edu/news/all-news/2017/09/virtual-reality-alleviates-pain-anxiety-for-pediatric-patients.html">manage pain</a>.
@@ -58,27 +58,33 @@ Besides providing immersive storytelling and gaming opportunities, and a new med
 
 ## Intro to A-Frame
 
-**A-Frame** is an open source framework for developing WebVR, based on HTML. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
+**A-Frame** is an open source framework for developing WebVR, based in HTML. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
 
 Just like other websites, A-Frame projects can be inspected using a built-in visual 3D inspector. We can access this by opening any A-Frame scene, then hitting `<ctrl> + <alt> + i`
 
 
 ### What Can We Create?
 
-Go to [https://aframe.io/](https://aframe.io/) to explore example projects.
+Go to [https://aframe.io/](https://aframe.io/) to explore example projects (left column).
 
 >Navigate within a scene by using WASD or arrow keys. Click and drag to turn.
 
 
 
-## Today's project
+## Today's Project
 
 We'll be reimagining Long Lake 58 in 150 years and building a virtual experience to share our vision with others.
 
 
+>## Think, Pair, Share
+> Fast forward 150 years! What does Long Lake 58 look like? <br>
+> What do you wish for this community, what do you hope to see?
+
+
+
 ## Getting Started
 
-## Primitives
+### Primitives
 
 A-Frame uses HTML elements called **primitives**. These can be customized using HTML attributes (e.g. `color="red"`).
 
@@ -133,7 +139,9 @@ We'll be using Glitch to edit and save our A-Frame projects.
 
 **Finding Background Images**
 
-When uploading background images, make sure that they have a 2:1 aspect ratio. Search for '360 images' or see this <a href="https://www.flickr.com/groups/equirectangular/">360° image library on Flickr</a>. Save an image by clicking on the image, then the Download icon (bottom, right). <br> <img alt="download image" src="img/flickr-save.png" class="print-hide"/>
+When uploading background images, make sure that they have a 2:1 aspect ratio. Search for '360 images' or see this <a href="https://www.flickr.com/groups/equirectangular/">360° image library on Flickr</a>. Save an image by clicking on the image, then the Download icon (bottom, right).
+
+<img alt="download image" src="img/flickr-save.png" class="print-hide"/>
 
 *Note: We can also capture 360 images using apps like <a href="https://play.google.com/store/apps/details?id=com.google.vr.cyclops&hl=en">Cardboard Camera</a>*
 
@@ -144,7 +152,7 @@ We can add textures to objects, too! Check out this <a href="https://www.flickr.
 
 ### Asset Management System
 
-This system helps your browser cache images, in order to help the scene load more quickly. We can use the asset management system by adding a new primitive called `<a-assets>`.
+This system helps your browser cache images, in order for the scene to load more quickly. We can use the asset management system by adding a new primitive called `<a-assets>`.
 
 1. Add an `<a-assets>` opening and closing tag just inside of your `<a-scene>`
 
@@ -164,7 +172,7 @@ This system helps your browser cache images, in order to help the scene load mor
 1. Locate your image in the assets folder and copy the image URL <br> <img alt="copy url" src="img/copy-img-url.png" class="print-hide"/>
 1. Create an `<img>` tag that links to this url
 1. Name the image by adding an `id`
-1. Reference the asset by adding a `src` attribute to the `<a-sky>` primitive
+1. Reference the asset by adding a `src` attribute to the `<a-sky>` entity
 
 ```html
 <a-scene>
@@ -185,7 +193,7 @@ This system helps your browser cache images, in order to help the scene load mor
 1. Copy the image URL (same as above)
 1. Create an `<img>` tag that links to this url
 1. Name the image by adding an `id`  
-1. Reference the asset by adding a `src` attribute to the primitive
+1. Reference the asset by adding a `src` attribute to the entity
 
 ```html
 <a-scene>
@@ -203,7 +211,7 @@ This system helps your browser cache images, in order to help the scene load mor
 
 ## Adding Animation
 
-We can use the `<a-animation>` primitive to animate entities within our scene. Nest it within of the entity you want to animate (e.g. between the `<a-box>` opening and `</a-box>` closing tag)
+We can use the `<a-animation>` primitive to animate entities within our scene. Nest it within the entity you want to animate (e.g. between the `<a-box>` opening and `</a-box>` closing tag)
 
 ```html
 <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow>
@@ -238,7 +246,7 @@ A-Frame automatically sets up a default camera in our scene. We can't currently 
 </a-scene>
 ```
 
-*If your `<a-plane>` disappears, try giving it a position attribute*
+*Note: If your `<a-plane>` disappears, try giving it a position attribute.*
 
 ### Animating on Events
 
@@ -277,12 +285,12 @@ Or, when the user looks at the sphere it changes colours, then changes back when
 </a-scene>
 ```
 
-For more event options, check out this <a href="https://aframe.io/docs/0.8.0/components/cursor.html#events">Cursor documentation</a>.
+For more event options, see the <a href="https://aframe.io/docs/0.8.0/components/cursor.html#events">Cursor documentation</a>.
 
 
 ## Adding Audio
 
-Audio can help enhance our VR scene by creating an even more immersive experience for the user. To find audio that is safe for reuse, try [https://freesound.org/](https://freesound.org/) or [https://www.jamendo.com/start](https://www.jamendo.com/start). *Bonus! Upload your own audio created in <a href="https://www.soundtrap.com">Soundtrap</a>!*
+Audio can enhance our scene by creating a more immersive experience for the user. To find audio that is safe for reuse, try [https://freesound.org/](https://freesound.org/) or [https://www.jamendo.com/start](https://www.jamendo.com/start). *Bonus! Upload your own audio created in <a href="https://www.soundtrap.com">Soundtrap</a>!*
 
 1. Upload your chosen audio file into the assets folder
 1. Copy the audio URL <br> <img alt="copy audio url" src="img/copy-audio-url.png" class="print-hide"/>
@@ -313,17 +321,12 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 
 ## Main Project
 
->## Think, Pair, Share
-> Fast forward 150 years! What does Long Lake 58 look like? <br>
-> What do you wish for this community, what do you hope to see?
-
-
 >## Exercise:
 > Create a virtual representation of your vision. You can use **these assets** to help build your scene, or upload your own assets from the resources listed above.
 
 
 
-### Optional: A-Frame Registry
+## Bonus: A-Frame Registry
 
 ### Need an Extra Challenge?
 
@@ -333,15 +336,16 @@ In this example, we will add a gravity effect using the Physics System.
 
 1. Go to the <a href="https://aframe.io/aframe-registry/">registry</a> and search for the **Physics System** component (click on the component name) <br> <img alt="registry" src="img/search-registry.png" class="print-hide"/>
 1. On the component page, scroll down to find the installation script - copy this <br> <img alt="copy script" src="img/install-physics.png" class="print-hide"/>
-1. Go back into your project, and past the script in the `<head>`
-1. 'Live preview' and inspect your scene (`<ctrl> + <alt> + i`) - zoom by scrolling with your mouse/trackpad
+1. Go back into your project, and paste the script in the `<head>`
+1. 'Show Live' and inspect your scene (`<ctrl> + <alt> + i`) - zoom by scrolling with your mouse/trackpad
 1. Let's apply a gravity effect. Click on an entity (e.g. sphere), then **add component: dynamic-body** <br> <img alt="dynamic body" src="img/add-dynamic-body.png" class="print-hide"/>
 1. We also need to prevent this entity from falling out of our scene. Click on the plane, then **add component: static-body** <br> <img alt="static body" src="img/add-static-body.png" class="print-hide"/>
 1. Preview changes by selecting **Back to Scene** <br> <img alt="back to scene top left" src="img/back-to-scene.png" class="print-hide"/>
 1. If you're happy with how it looks, copy the code that you added: find the new component then select **Copy Attributes** <br> <img alt="copy attributes button" src="img/copy-attributes.png" class="print-hide"/>
 1. Go back into your code, and paste this inside of the entity <br> (e.g. `<a-sphere dynamic-body="sphereRadius: NaN" ...>`)
 
-*When adding additional components, read the instructions to have a better understanding of how it works. Visit <a href="https://www.npmjs.com/package/aframe-physics-system">this page</a> for more info on how the Physics System component works.*
+*When adding additional components, read the instructions to have a better understanding of how it works. Visit <a href="https://www.npmjs.com/package/aframe-physics-system">this page</a> for more info on the Physics System component.*
+
 
 >## TIP:
 > When inspecting our scene, it can be difficult to tell similar entities apart. Name entities using `id` to keep your code organized. (e.g. `<a-sphere id="scoop1">`)
@@ -357,7 +361,7 @@ In this example, we will add a gravity effect using the Physics System.
 Follow these steps to view your A-Frame scene using <a href="https://vr.google.com/cardboard/">Google Cardboard</a>:
 
 1. Rename your project <br> <img alt="rename project top left" src="img/rename-project.png" class="print-hide"/>
-1. Open up a browser and go to your project's URL (same as 'live preview') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
+1. Open up a browser and go to your project's URL (same as 'Show Live') <br> <img alt="project url" src="img/final-project.png" class="print-hide"/>
 1. Click on the Google Cardboard icon <br> <img alt="viewer icon bottom right" src="img/viewer-mode.png" class="print-hide"/>
 1. Place your mobile device in the viewer and enjoy!
 
@@ -370,7 +374,7 @@ Follow these steps to view your A-Frame scene using <a href="https://vr.google.c
 
 
 >## Take-Home Exercise
-> Any Minecraft fans? Check out: [aframe-aincraft](aframe-aincraft) <br>
+> Any Minecraft fans? Check out: <a href="https://glitch.com/~aframe-aincraft">aframe-aincraft</a> <br>
 > You can recreate this project by following <a href="https://aframe.io/docs/0.5.0/guides/building-a-minecraft-demo.html">this tutorial</a>.
 
 
