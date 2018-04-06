@@ -329,7 +329,7 @@ For more audio options, check out the <a href="https://aframe.io/docs/0.8.0/comp
 
 We can add additional animations and special effects via the <a href="https://aframe.io/aframe-registry/">A-Frame Registry</a>. This is a library of ready-to-use components created by other developers in the A-Frame community.
 
-You can use any of these, but we'll use the Physics System for this example.
+In this example, we will add a gravity effect using the Physics System.
 
 1. Go to the <a href="https://aframe.io/aframe-registry/">registry</a> and search for the **Physics System** component (click on the component name) <br> <img alt="registry" src="img/search-registry.png" class="print-hide"/>
 1. On the component page, scroll down to find the installation script - copy this <br> <img alt="copy script" src="img/install-physics.png" class="print-hide"/>
