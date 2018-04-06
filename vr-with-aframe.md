@@ -9,14 +9,14 @@ permalink: module4-4.html
 
 ## What is VR?
 
-**Virtual Reality** is a computer-generated 3D environment that simulates a real experience. The level of interactivity can vary from passively observing to device-assisted interactions.
+**Virtual Reality (VR)** is a computer-generated 3D environment that simulates a real experience. The level of interactivity can vary from passively observing to device-assisted interactions.
 
 Examples:
 * <a href="https://www.youtube.com/watch?v=hEK-J3ZgCZA">Tilt Brush</a>
 * <a href="https://experiments.withgoogle.com/webvr/konterball">Konterball (ping pong in VR)</a>
 * <a href="https://aframe.io/a-blast/">Mozilla AR A-Blast</a>
 
-**Augmented Reality** is a computer-generated experience where a virtual world is superimposed on the user's view of the real world.
+**Augmented Reality (AR)** is a computer-generated experience where a virtual world is superimposed on the user's view of the real world.
 
 Examples:
 * <a href="https://www.pokemongo.com/en-ca/">Pokémon Go</a>
@@ -32,13 +32,11 @@ Examples:
 
 *What's the value of using virtual experiences over real-life experiences?*
 
-Besides providing immersive storytelling and gaming opportunities, VR is also being used to positively impact society! Here are a few examples:
+Besides providing immersive storytelling and gaming opportunities, and a new medium for creativity and self-expression, VR is also being used to positively impact society! Here are a few examples:
 
-**VR Therapy**: Using VR to face fears like <a href="https://newatlas.com/fearless-spider-fear-oculus-rift-vr/45146/">arachnophobia</a> or <a href="https://newatlas.com/public-speaking-simulation-gear-vr/44871/">public speaking</a>.
-
-**VR + Healthcare**: As a tool for surgical training, or to help patients <a href="https://med.stanford.edu/news/all-news/2017/09/virtual-reality-alleviates-pain-anxiety-for-pediatric-patients.html">manage pain</a>.
-
-**VR + Education**: Providing students access to new places and experiences via <a href="https://edu.google.com/expeditions/#about">Google Expeditions</a>
+* **VR Therapy**: Using VR to face fears like <a href="https://newatlas.com/fearless-spider-fear-oculus-rift-vr/45146/">arachnophobia</a> or <a href="https://newatlas.com/public-speaking-simulation-gear-vr/44871/">public speaking</a>.
+* **VR + Healthcare**: As a tool for surgical training, or to help patients <a href="https://med.stanford.edu/news/all-news/2017/09/virtual-reality-alleviates-pain-anxiety-for-pediatric-patients.html">manage pain</a>.
+* **VR + Education**: Providing students access to new places and experiences via <a href="https://edu.google.com/expeditions/#about">Google Expeditions</a>
 
 
 
@@ -60,7 +58,7 @@ Besides providing immersive storytelling and gaming opportunities, VR is also be
 
 ## Intro to A-Frame
 
-**A-Frame** is an open source framework for developing WebVR. A-Frame is based on HTML, using the `<a-scene>` element. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
+**A-Frame** is an open source framework for developing WebVR, based on HTML. Because it is cross-platform, we can experience A-Frame projects using anything from an Oculus Rift, to the browser on our desktop computer.
 
 Just like other websites, A-Frame projects can be inspected using a built-in visual 3D inspector. We can access this by opening any A-Frame scene, then hitting `<ctrl> + <alt> + i`
 
@@ -69,7 +67,7 @@ Just like other websites, A-Frame projects can be inspected using a built-in vis
 
 Go to [https://aframe.io/](https://aframe.io/) to explore example projects.
 
->Navigate within a scene by using WASD and arrow keys. Click and drag to turn.
+>Navigate within a scene by using WASD or arrow keys. Click and drag to turn.
 
 
 
@@ -286,6 +284,31 @@ For more event options, check out this <a href="https://aframe.io/docs/0.8.0/com
 
 
 ## Adding Audio
+
+Audio can help enhance our VR scene and create an even more immersive experience for the user. To find audio that is safe for reuse, try [https://freesound.org/](https://freesound.org/) or [https://www.jamendo.com/start](https://www.jamendo.com/start). *Bonus! Upload your own audio created using <a href="https://www.soundtrap.com">Soundtrap</a>!*
+
+1. Upload your chosen audio file into the assets folder
+1. Copy the audio URL <br> <img alt="copy audio url" src="img/copy-audio-url.png" class="print-hide"/>
+1. Add an audio element inside of the `<a-assets>` primitive, linking to the audio URL
+1. Add a `preload` attribute to your audio file
+
+We can either add `autoplay` to play the audio automatically **OR** name the audio file using an `id` and add it later on.
+
+```html
+<a-scene>
+  <a-assets>
+    <!-- ... -->
+    <audio src="https://cdn.glitch.com/linktoaudio1" autoplay preload></audio>
+    <audio id="pop" src="https://cdn.glitch.com/linktoaudio2" preload></audio>
+  </a-assets>
+
+  <!-- ... -->
+  <a-cylinder sound="src: #pop; on: click;" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+
+<a-scene>
+```
+
+*You'll notice that the `sound` attribute's properties (e.g. `on`) and values (e.g. `click`) look similar to CSS!*
 
 
 ## Main Project
